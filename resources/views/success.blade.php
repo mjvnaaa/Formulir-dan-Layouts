@@ -5,7 +5,7 @@
     <h2 class="text-xl font-bold mb-2">Data Berhasil Disimpan</h2>
     <p>Nama: {{ $nama }}</p>
     <p>Email: {{ $email }}</p>
-    <p>Nama: {{ $telepon }}</p>
-    <p>Email: {{ $alamat }}</p>
+    <p>Telepon: {{ $telepon }}</p>
+    <p>Alamat: {{ $alamat }}</p>
 </div>
 @endsection
