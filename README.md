@@ -19,7 +19,7 @@ php artisan make:migration create_mahasiswa
 Perintah ini digunakan untuk membuat file migration baru.
 File tersebut berfungsi mendefinisikan struktur tabel mahasiswa di database.
 Pada file `database/migrations/2025_09_30_035925_create_mahasiswa.php` ditambahkan kode berikut:
-```
+```php
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -58,7 +58,7 @@ php artisan make:seeder MahasiswaSeeder
 Perintah ini digunakan untuk membuat file Seeder baru.
 Seeder berfungsi untuk mengisi data awal ke tabel mahasiswa, misalnya nama, email, telepon, dan alamat.
 Isi file `database/seeders/MahasiswaSeeder.php`:
-```
+```php
 <?php
 
 namespace Database\Seeders;
@@ -117,7 +117,7 @@ php artisan make:model Mahasiswa
 Perintah ini digunakan untuk membuat model baru bernama Mahasiswa agar bisa berhubungan langsung dengan tabel mahasiswa.
 
 Isi `app/Models/Mahasiswa.php`:
-```
+```php
 <?php
 
 namespace App\Models;
@@ -140,7 +140,7 @@ php artisan make:controller MahasiswaController --resource
 ```
 Perintah ini membuat controller dengan method dasar CRUD (index, create, store, dll).
 Tambahkan kode ini pada app\Http\Controllers\MahasiswaController.php:
-```
+```php
 <?php
 
 namespace App\Http\Controllers;
@@ -179,7 +179,7 @@ class MahasiswaController extends Controller
 Kode di atas mengatur alur logika: menampilkan data, menampilkan form, serta menyimpan data baru setelah divalidasi.
 ### 2.5. View
 **Index (`resources/views/mahasiswa/index.blade.php`):**
-```
+```php
 @extends('layouts.app')
 
 @section('content')

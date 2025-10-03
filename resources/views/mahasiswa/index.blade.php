@@ -12,20 +12,24 @@
     <table class="table-auto border-collapse border w-full">
         <thead>
             <tr class="bg-gray-200">
-                <th class="border px-4 py-2">ID</th>
                 <th class="border px-4 py-2">Nama</th>
-                <th class="border px-4 py-2">Email</th>
+                <th class="border px-4 py-2">Nim</th>
+                <th class="border px-4 py-2">Prodi</th>
+                <th class="border px-4 py-2">Jurusan</th>
                 <th class="border px-4 py-2">Telepon</th>
+                <th class="border px-4 py-2">Email</th>
                 <th class="border px-4 py-2">Alamat</th>
             </tr>
         </thead>
         <tbody>
             @foreach($mahasiswa as $m)
                 <tr>
-                    <td class="border px-4 py-2">{{ $m->id }}</td>
                     <td class="border px-4 py-2">{{ $m->nama }}</td>
-                    <td class="border px-4 py-2">{{ $m->email }}</td>
+                    <td class="border px-4 py-2">{{ $m->nim }}</td>
+                    <td class="border px-4 py-2">{{ $m->prodi }}</td>
+                    <td class="border px-4 py-2">{{ $m->jurusan }}</td>
                     <td class="border px-4 py-2">{{ $m->telepon }}</td>
+                    <td class="border px-4 py-2">{{ $m->email }}</td>
                     <td class="border px-4 py-2">{{ $m->alamat }}</td>
                 </tr>
             @endforeach
