@@ -66,3 +66,9 @@ Route::get('/mahasiswa/delete/{nim}', function ($nim) {
     DB::table('mahasiswa')->where('nim', $nim)->delete();
     return "Data mahasiswa dengan NIM $nim berhasil dihapus!";
 });
+
+Route::get('/', function () {
+    return redirect()->route('mahasiswa.index');
+});
+
+Route::resource('mahasiswa', MahasiswaController::class);
